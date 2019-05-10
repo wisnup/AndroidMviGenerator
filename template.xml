@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="3"
+    name="MVI classes"
+    description="Create necessary classes for MVI base."
+    >
+
+    <category value="Other" />
+
+
+
+    <parameter
+        id="feature"
+        name="Feature Name"
+        type="string"
+        constraints="class|nonempty|unique"
+        default="Login"
+        help="The name of the feature to create" />
+
+        <thumbs>
+            <!-- default thumbnail is required -->
+            <thumb>mvi.png</thumb>  
+        </thumbs>
+
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
