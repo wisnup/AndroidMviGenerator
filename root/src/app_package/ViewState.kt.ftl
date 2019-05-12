@@ -1,6 +1,6 @@
-package ${packageName};
+package ${packageName}.${feature?lower_case};
 
-import com.quipper.school.assignment.viewmodel.MviViewState
+import ${mviInterface}.MviViewState
 
 data class ${feature}ViewState(
     val error: Throwable?

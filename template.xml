@@ -13,13 +13,20 @@
         name="Feature Name"
         type="string"
         constraints="class|nonempty|unique"
-        default="AddTodo"
+        default=""
         help="The name of the feature to create. Please use capitalize camel case, ex: AddTodo" />
 
-        <thumbs>
-            <!-- default thumbnail is required -->
-            <thumb>mvi.png</thumb>  
-        </thumbs>
+    <parameter
+        id="mviInterface"
+        name="MVI Interface Package"
+        type="string"
+        constraints="class|nonempty|unique"
+        default="com.quipper.school.assignment.viewmodel"
+        help="The package that contains the MVI base interfaces." />
+
+    <thumbs>
+        <thumb>mvi.png</thumb>  
+    </thumbs>
 
 
     <globals file="globals.xml.ftl" />

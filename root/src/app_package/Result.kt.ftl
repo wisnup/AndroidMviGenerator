@@ -1,6 +1,6 @@
-package ${packageName};
+package ${packageName}.${feature?lower_case};
 
-import com.quipper.school.assignment.viewmodel.MviResult
+import ${mviInterface}.MviResult
 
 sealed class ${feature}Result : MviResult {
     

@@ -1,6 +1,6 @@
-package ${packageName};
+package ${packageName}.${feature?lower_case};
 
-import com.quipper.school.assignment.viewmodel.MviAction
+import ${mviInterface}.MviAction
 
 sealed class ${feature}Action : MviAction {
     

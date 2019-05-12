@@ -1,6 +1,6 @@
-package ${packageName};
+package ${packageName}.${feature?lower_case};
 
-import com.quipper.school.assignment.viewmodel.MviIntent
+import ${mviInterface}.MviIntent
 
 sealed class ${feature}Intent : MviIntent {
     
