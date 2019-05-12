@@ -2,21 +2,19 @@
 <template
     format="5"
     revision="3"
-    name="MVI classes"
-    description="Create necessary classes for MVI base."
+    name="MVI base classes"
+    description="Create necessary classes for MVI implementation baseline."
     >
 
-    <category value="Other" />
-
-
+    <category value="Quipper" />
 
     <parameter
         id="feature"
         name="Feature Name"
         type="string"
         constraints="class|nonempty|unique"
-        default="Login"
-        help="The name of the feature to create" />
+        default="AddTodo"
+        help="The name of the feature to create. Please use capitalize camel case, ex: AddTodo" />
 
         <thumbs>
             <!-- default thumbnail is required -->

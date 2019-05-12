@@ -1,23 +1,20 @@
 <?xml version="1.0"?>
 <recipe>
 
-	<instantiate from="root/src/app_package/Activity.java.ftl"
-                  to="${escapeXmlAttribute(srcOut)}/${classname}Activity.java" />
-	<instantiate from="root/src/app_package/Configurator.java.ftl"
-								  to="${escapeXmlAttribute(srcOut)}/${classname}Configurator.java"/>
-	<instantiate from="root/src/app_package/Interactor.java.ftl"
-									to="${escapeXmlAttribute(srcOut)}/${classname}Interactor.java"/>
-	<instantiate from="root/src/app_package/Presenter.java.ftl"
-									to="${escapeXmlAttribute(srcOut)}/${classname}Presenter.java"/>
+	<instantiate from="root/src/app_package/Action.kt.ftl"
+        to="${escapeXmlAttribute(srcOut)}/${feature}/${feature}Action.kt" />
+	<instantiate from="root/src/app_package/ActionProcessor.kt.ftl"
+		to="${escapeXmlAttribute(srcOut)}/${feature}/${feature}ActionProcessor.kt"/>
+	<instantiate from="root/src/app_package/Fragment.kt.ftl"
+		to="${escapeXmlAttribute(srcOut)}/${feature}/${feature}Fragment.kt"/>
+	<instantiate from="root/src/app_package/Intent.kt.ftl"
+		to="${escapeXmlAttribute(srcOut)}/${feature}/${feature}Intent.kt"/>
+	<instantiate from="root/src/app_package/Result.kt.ftl"
+		to="${escapeXmlAttribute(srcOut)}/${feature}/${feature}Result.kt"/>
+	<instantiate from="root/src/app_package/ViewModel.kt.ftl"
+		to="${escapeXmlAttribute(srcOut)}/${feature}/${feature}ViewModel.kt"/>
+	<instantiate from="root/src/app_package/ViewState.kt.ftl"
+		to="${escapeXmlAttribute(srcOut)}/${feature}/${feature}ViewState.kt"/>																to="${escapeXmlAttribute(testOut)}/${feature}PresenterUnitTest.kt"/>
 
-	<instantiate from="root/src/app_package/Router.java.ftl"
-									to="${escapeXmlAttribute(srcOut)}/${classname}Router.java"/>
-	<instantiate from="root/src/app_package/Worker.java.ftl"
-									to="${escapeXmlAttribute(srcOut)}/${classname}Worker.java"/>
-	<instantiate from="root/src/app_package/Model.java.ftl"
-																	to="${escapeXmlAttribute(srcOut)}/${classname}Model.java"/>
-	<instantiate from="root/src/app_package/PresenterUnitTest.java.ftl"
-																																	to="${escapeXmlAttribute(testOut)}/${classname}PresenterUnitTest.java"/>
-
-	<open file="${srcOut}/${classname}Activity.java"/>
+	<open file="${srcOut}/${feature}/${feature}Fragment.kt"/>
 </recipe>
