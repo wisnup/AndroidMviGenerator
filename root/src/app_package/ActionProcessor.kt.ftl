@@ -5,7 +5,7 @@ import io.reactivex.ObservableTransformer
 
 class ${feature}ActionProcessor {
     
-    var processor =
+    var actionProcessor =
         ObservableTransformer<${feature}Action, ${feature}Result> {actions ->
             actions.publish {shared ->
                 shared // TODO route processor based on action type

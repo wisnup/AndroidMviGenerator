@@ -4,5 +4,6 @@ import ${mviInterface}.MviResult
 
 sealed class ${feature}Result : MviResult {
     
+    object Load${feature}Result : ${feature}Result()
 }
 

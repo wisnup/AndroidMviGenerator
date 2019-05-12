@@ -4,5 +4,6 @@ import ${mviInterface}.MviAction
 
 sealed class ${feature}Action : MviAction {
     
+    object Load${feature}Action : ${feature}Action()
 }
 

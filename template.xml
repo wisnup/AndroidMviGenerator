@@ -14,7 +14,7 @@
         type="string"
         constraints="class|nonempty|unique"
         default=""
-        help="The name of the feature to create. Please use capitalize camel case, ex: AddTodo" />
+        help="The name of the feature to create. Please use capitalize camel case, ex: MyCourse" />
 
     <parameter
         id="mviInterface"
