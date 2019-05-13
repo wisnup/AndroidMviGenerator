@@ -6,4 +6,3 @@ sealed class ${feature}Intent : MviIntent {
     
     object Load${feature}Intent : ${feature}Intent()
 }
-

@@ -69,4 +69,3 @@ class ${feature}Fragment :
         // TODO render the view state
     }
 }
-
