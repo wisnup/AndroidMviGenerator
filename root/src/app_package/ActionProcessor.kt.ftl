@@ -12,7 +12,7 @@ class ${feature}ActionProcessor {
                     .cast(${feature}Result::class.java)
                     .mergeWith(
                         shared.filter {
-                            it !is  ${feature}Action // TODO filter unknown action type
+                            it !is  ${feature}Action.Load${feature}Action // TODO filter unknown action type
                         }.flatMap {w ->
                             Observable.error<${feature}Result>(
                                 IllegalArgumentException("Unknown Action type: $w")

@@ -45,10 +45,7 @@ class ${feature}ViewModel :
     ): ${feature}ViewState {
         // TODO handle based on result
         return when(result) {
-            is ${feature}Result ->
-                when (result) {
-                    is ${feature}Result.Load${feature}Result -> previousState
-                }
+            is ${feature}Result.Load${feature}Result -> previousState
         }
     }
 }
