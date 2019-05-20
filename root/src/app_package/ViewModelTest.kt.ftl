@@ -1,4 +1,4 @@
-package ${packageName}.${feature?lower_case};
+package ${packageName}.${feature?lower_case}
 
 import com.quipper.testing.runner.QLearnJUnitRunner
 import org.junit.Before

@@ -1,4 +1,4 @@
-package ${packageName}.${feature?lower_case};
+package ${packageName}.${feature?lower_case}
 
 import ${mviInterface}.MviAction
 
