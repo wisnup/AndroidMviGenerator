@@ -21,15 +21,14 @@ class ${feature}ViewModel :
             }
         }
     
-    private val processor =
-        ${feature}ActionProcessor()
+    private val actionProcessor = ${feature}ActionProcessor()
     private val stateObservable: Observable<${feature}ViewState> = compose()
 
     private fun compose(): Observable<${feature}ViewState> {
         return intentSubject
             .compose(intentFilter)
             .map(this::actionFromIntent)
-            .compose(processor.actionProcessor)
+            .compose(actionProcessor.processor)
             .scan(${feature}ViewState.idle(), this::reduce)
             .distinctUntilChanged()
             .replay(1)
